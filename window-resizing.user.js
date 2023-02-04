@@ -40,5 +40,4 @@ buttonEnable.addEventListener("click", function () {
   buttonDisable.style.display = "block";
 })
 
-//GM_addStyle('.button-design {position: absolute; top: 10%; background-color: #fff; color: #777; border: 0px solid #fff; border-radius: 10px; text-transform: uppercase; display: inline-block; font-weight: bold; padding: 10px 15px;}');
 
