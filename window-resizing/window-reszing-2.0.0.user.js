@@ -21,8 +21,6 @@ function main () {
         $("#chat_outer").resizable("disable");
         $("#buildings_outer").resizable("disable");
         $("#radio_outer").resizable("disable");
-        button_disable.style.display = "none";
-        button_enable.style.display = "block";
     })
 
     const button_enable = document.createElement("button");
@@ -34,8 +32,6 @@ function main () {
         $("chat_outer").resizable("enable");
         $("building_outer").resizable("enable");
         $("radio_outer").resizable("enable");
-        button_enable.style.display = "none";
-        button_disable.style.display = "block";
     })
 }
 
