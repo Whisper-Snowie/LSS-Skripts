@@ -13,20 +13,18 @@ function main () {
     let help_menu = document.getElementById("help_menu");
 
     const button_disable = document.createElement("button");
-    button_disable.textContent = "Disable resizable windows";
+    button_disable.textContent = "Disable dragable windows";
     help_menu.querySelector("li").append(button_disable);
     button_disable.classList.add('btn', 'btn-default', 'btn-xs');
     button_disable.addEventListener("click", function () {
         $("#missions_outer").draggable("disable");
         $("#chat_outer").draggable("disable");
         $("#buildings_outer").draggable("disable");
-        $("#radio_outer").draggable("disable");
-        button_disable.style.display = "none";
-        button_enable.style.display = "block";
+        $("#radio_outer").draggable("disable");s
     })
 
     const button_enable = document.createElement("button");
-    button_enable.textContent = "Enable resizable windows";
+    button_enable.textContent = "Enable dragable windows";
     help_menu.querySelector("li").append(button_enable);
     button_enable.classList.add('btn', 'btn-default', 'btn-xs');
     button_enable.addEventListener("click", function () {
@@ -34,8 +32,6 @@ function main () {
         $("chat_outer").draggable("enable");
         $("building_outer").draggable("enable");
         $("radio_outer").draggable("enable");
-        button_enable.style.display = "none";
-        button_disable.style.display = "block";
     })
 }
 
